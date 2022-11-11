@@ -1,6 +1,8 @@
 # image_409630240
 
 A new Flutter project.
+main.dart: 製作button
+B.dart: 使用photoview搭配button進行圖片切換
 
 ## Getting Started
 
