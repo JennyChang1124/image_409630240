@@ -10,8 +10,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Home Page'),
-          backgroundColor: Colors.green,
+          title: const Text('Home'),
+          backgroundColor: Colors.pinkAccent,
         ),
         body: HomePage(),
       ),
@@ -24,23 +24,18 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridView.count(
       primary: false,
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.all(30),
       crossAxisSpacing: 10,
       mainAxisSpacing: 10,
       crossAxisCount: 2,
       children: <Widget>[
         ElevatedButton(
-          child: const Icon(Icons.menu_book),
+          child: const Icon(Icons.photo_library),
           onPressed: () {
             Navigator.push(
                 context, MaterialPageRoute(builder: (context) => BPage())
             );
           },
-        ),
-        const Expanded(
-          child: FittedBox(
-            child: FlutterLogo(),
-          ),
         ),
       ],
     );
